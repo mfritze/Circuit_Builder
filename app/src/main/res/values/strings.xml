@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CircuitBuilder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Circuit Builder</string>
+    <string name="create">Create</string>
+    <string name="edit">Edit</string>
+    <string name="newGame">New Game</string>
+    <string name="title_activity_create">Create</string>
+    <string name="save">Save</string>
+    <string name="projectName">Project Name</string>
+    <string name="dimension">Dimensions(X and Y)</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Start</string>
+
+    <string name="test">Test</string>
+
+</resources>

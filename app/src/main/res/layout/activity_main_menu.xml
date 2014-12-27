@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#074bb6"
+    android:id="@+id/OG"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff545"
+        android:text="@string/title" />
+
+    <!-- Replace these with proper images -->
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#bcb24a"
+        android:background="#2d3644"
+        android:text="@string/newGame"
+        />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#bcb24a"
+        android:background="#2d3644"
+        android:text="@string/create"
+        android:onClick="createPopup"
+        />
+
+</LinearLayout>

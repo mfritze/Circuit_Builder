@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/gameBoard">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xor_button"/>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight=".9"-->
+        <!--android:background="#255db7"-->
+        <!-->-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/title"-->
+            <!--android:layout_gravity="center"/>-->
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.1"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#100945"-->
+        <!-->-->
+        <!--<Button-->
+            <!--android:id="@+id/saveButton"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/save"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/wireTool"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:text="Wire"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/gatePopup"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:text="Gates"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/extrasPopup"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:text="Extras"/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>
