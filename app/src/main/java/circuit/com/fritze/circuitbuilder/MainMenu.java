@@ -61,7 +61,7 @@ public class MainMenu extends ActionBarActivity {
                     }else{
                         file.createSaveDir();
                         window.dismiss();
-                        createActivity(name);
+                        //createActivity(); // TODO
                     }
                 }
             }
@@ -77,7 +77,7 @@ public class MainMenu extends ActionBarActivity {
         window.showAtLocation(this.findViewById(R.id.OG), Gravity.CENTER, 0,0 );
     }
 
-    public void createActivity(String title){
+    public void createActivity(View v){
         Intent createIntent = new Intent(this, Create.class);
 
         startActivity(createIntent);

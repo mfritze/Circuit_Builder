@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,15 +18,6 @@
         android:text="@string/title" />
 
     <!-- Replace these with proper images -->
-    <Button
-        android:id="@+id/newGame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:textColor="#bcb24a"
-        android:background="#2d3644"
-        android:text="@string/newGame"
-        />
 
     <Button
         android:id="@+id/create"
@@ -37,7 +27,7 @@
         android:textColor="#bcb24a"
         android:background="#2d3644"
         android:text="@string/create"
-        android:onClick="createPopup"
+        android:onClick="createActivity"
         />
 
 </LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/wire_2_to_1_button"
+    <item android:drawable="@drawable/wire_2_to_1_pressed"
         android:state_pressed="true" />
 
-    <item android:drawable="@drawable/wire_2_to_1_pressed" />
+    <item android:drawable="@drawable/wire_2_to_1" />
 </selector>

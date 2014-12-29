@@ -1,17 +1,25 @@
 package circuit.com.fritze.circuitbuilder;
 
+import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Display;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import java.util.ArrayList;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.PopupWindow;
 
 
 public class Create extends ActionBarActivity {
-    final int SIZE = 10;
-    ArrayList<Element> board;
+    final int SIZE = 10, SCREEN_DISPLACEMENT = 200;
+    //ArrayList<Element> board;
+    int board[][];
+    Screen screen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +39,9 @@ public class Create extends ActionBarActivity {
 //            }
 //            gameBoard.addView(row);
 //        }
+        board = new int[SIZE][SIZE];
+        Display d = getWindowManager().getDefaultDisplay();
+        screen = new Screen(d);
         setContentView(R.layout.activity_create);
 
     }
@@ -68,5 +79,56 @@ public class Create extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void elementPopup(final View buttonView){
+        LayoutInflater inflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View popup_view = inflater.inflate(R.layout.element_popup, null);
+        final PopupWindow window = new PopupWindow(popup_view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        int top,left, screenW,screenH;
+        View parent = (View) buttonView.getParent();
+        top = parent.getTop();
+        left = buttonView.getLeft();
+        screenW = screen.getX();
+        screenH = screen.getY();
+
+        if((top > screenH - SCREEN_DISPLACEMENT) || (left > screenW - SCREEN_DISPLACEMENT)){
+            top -= SCREEN_DISPLACEMENT;
+            left -= SCREEN_DISPLACEMENT;
+        }
+
+
+        Button button = (Button) popup_view.findViewById(R.id.selectBlank);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                buttonView.setBackground(getDrawable(R.drawable.blank_button));
+                window.dismiss();
+                //TODO change game board
+            }
+        });
+
+        button = (Button) popup_view.findViewById(R.id.selectDisplay);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                buttonView.setBackground(getDrawable(R.drawable.display_button));
+                window.dismiss();
+                //TODO change game board
+            }
+        });
+
+        button = (Button) popup_view.findViewById(R.id.selectWires);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                
+
+            }
+        });
+        window.setBackgroundDrawable(new BitmapDrawable());
+        window.setOutsideTouchable(true);
+        window.showAtLocation(popup_view, Gravity.NO_GRAVITY, left, top);
     }
 }

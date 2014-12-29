@@ -45,20 +45,19 @@ public class Element {
     }
 
     public boolean setAndTestOut(){
-        boolean b = false;
         if(this.type == Type.OR){
-            b = this.input1 || this.input2;
-            return b;
+            this.output = this.input1 || this.input2;
+            return this.output;
         }
         if(this.type == Type.AND){
-            b = this.input1 && this.input2;
-            return b;
+            this.output = this.input1 && this.input2;
+            return this.output;
         }
         if(this.type == Type.XOR){
-            b = this.input1 ^ this.input2;
-            return b;
+            this.output = this.input1 ^ this.input2;
+            return this.output;
         }
-        return b;
+        return this.output;
     }
 
 
