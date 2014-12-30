@@ -99,10 +99,10 @@ public class Create extends ActionBarActivity {
             left -= SCREEN_DISPLACEMENT;
         }
 
+        final int x = left, y = top;
 
-        Button button = (Button) popup_view.findViewById(R.id.selectBlank);
-        button.setOnClickListener(new View.OnClickListener() {
-
+        Button blankButton = (Button) popup_view.findViewById(R.id.selectBlank);
+        blankButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonView.setBackground(getDrawable(R.drawable.blank_button));
                 window.dismiss();
@@ -110,9 +110,8 @@ public class Create extends ActionBarActivity {
             }
         });
 
-        button = (Button) popup_view.findViewById(R.id.selectDisplay);
-        button.setOnClickListener(new View.OnClickListener() {
-
+        Button displayButton = (Button) popup_view.findViewById(R.id.selectDisplay);
+        displayButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonView.setBackground(getDrawable(R.drawable.display_button));
                 window.dismiss();
@@ -120,15 +119,118 @@ public class Create extends ActionBarActivity {
             }
         });
 
-        button = (Button) popup_view.findViewById(R.id.selectWires);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button wireButton = (Button) popup_view.findViewById(R.id.selectWires);
+        wireButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                
+                window.dismiss();
+                LayoutInflater innerInflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View innerPopupView = innerInflater.inflate(R.layout.wire_popup, null);
+                final PopupWindow innerWindow = new PopupWindow(innerPopupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                innerWindow.setBackgroundDrawable(new BitmapDrawable());
+                innerWindow.setOutsideTouchable(true);
+                innerWindow.showAtLocation(innerPopupView, Gravity.NO_GRAVITY, x, y);
+
+                Button wire = (Button) innerPopupView.findViewById(R.id.selectWire_3_1);
+                wire.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.wire_3_to_1_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
+                wire = (Button) innerPopupView.findViewById(R.id.selectWire_2_1);
+                wire.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.wire_2_to_1_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
+
+                wire = (Button) innerPopupView.findViewById(R.id.selectWire_1_11);
+                wire.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.wire_1_11_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
+                wire = (Button) innerPopupView.findViewById(R.id.selectWire_1_12);
+                wire.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.wire_1_to_12_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
 
             }
         });
+
+        Button gatesButton = (Button) popup_view.findViewById(R.id.selectGates);
+        gatesButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                window.dismiss();
+                LayoutInflater innerInflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View innerPopupView = innerInflater.inflate(R.layout.gate_popup, null);
+                final PopupWindow innerWindow = new PopupWindow(innerPopupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                innerWindow.setBackgroundDrawable(new BitmapDrawable());
+                innerWindow.setOutsideTouchable(true);
+                innerWindow.showAtLocation(innerPopupView, Gravity.NO_GRAVITY, x, y);
+
+                Button gate = (Button) innerPopupView.findViewById(R.id.selectAnd);
+                gate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.and_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
+                gate = (Button) innerPopupView.findViewById(R.id.selectXor);
+                gate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.xor_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
+                gate = (Button) innerPopupView.findViewById(R.id.selectOr);
+                gate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //TODO change game board
+                        buttonView.setBackground(getDrawable(R.drawable.or_button));
+                        innerWindow.dismiss();
+
+                    }
+                });
+
+            }
+        });
+
         window.setBackgroundDrawable(new BitmapDrawable());
         window.setOutsideTouchable(true);
-        window.showAtLocation(popup_view, Gravity.NO_GRAVITY, left, top);
+        window.showAtLocation(popup_view, Gravity.NO_GRAVITY, x, y);
     }
+
+
 }
+

@@ -2,702 +2,816 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/gameBoard">
+    android:background="#100945"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_0_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_0_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_1_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_1_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_2_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_2_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_3_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_3_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_4_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_4_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_5_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_5_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_6_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_6_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_7_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_7_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_8_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_8_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/element_9_0"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <!-- This one -->
+                    <Button
+                        android:id="@+id/element_9_5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/source_button"
+                        />
+                    <Button
+                        android:id="@+id/element_9_6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                    <Button
+                        android:id="@+id/element_9_9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/blank_button"
+                        android:onClick="elementPopup" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:background="#100945">
 
         <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/blank_button"
-            android:onClick="elementPopup"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save_button"
             />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/run_button"
             />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
-        <Button
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/wire_3_to_1_button"
-            android:onClick="elementPopup"
-            />
 
     </LinearLayout>
 </LinearLayout>
