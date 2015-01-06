@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#100945"
+    android:background="@color/background"
     android:orientation="vertical">
 
     <ScrollView
@@ -719,72 +719,62 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_1"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_2"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_3"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_4"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
-                    <!-- This one -->
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_5"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/source_button"
-                        />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_6"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_7"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_8"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
                     <Button
                         android:id="@+id/element_9_9"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:background="@drawable/blank_button"
-                        android:onClick="elementPopup" />
+                        android:background="@drawable/source_button" />
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -792,26 +782,37 @@
         </HorizontalScrollView>
 
     </ScrollView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:orientation="horizontal"
-        android:background="#100945">
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/dark"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/save_button"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:background="@color/background">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/run_button"
-            />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/save_button"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/run_button"
+                />
 
 
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
